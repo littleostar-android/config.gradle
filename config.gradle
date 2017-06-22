@@ -18,7 +18,7 @@
 //apply from: 'config.gradle'
 
 // 3 使用
-//def conf = rootProject.ext.android
+//def conf = rootProject.ext.version
 //def libs = rootProject.ext.dependencies
 
 //compileSdkVersion conf.compileSdkVersion
@@ -44,7 +44,11 @@ ext {
             junit            : 'junit:junit:4.12', // 单元测试工具
             jsoup            : 'org.jsoup:jsoup:1.10.2', // java爬虫, html解析工具
 
+//            nohttp           : 'com.yanzhenjie.nohttp:nohttp:1.1.2',
+//            no_okhttp        : 'com.yanzhenjie.nohttp:okhttp:1.1.2',
+
             okhttp3          : 'com.squareup.okhttp3:okhttp:3.8.0', // 网络请求框架okhttp3
+            okhttputils      : 'com.zhy:okhttputils:2.6.2', //
             async_http       : 'com.loopj.android:android-async-http:1.4.9', // 网络请求框架asynchttp
 
             easysp           : 'com.white:easysp:1.0.0', // sharedpreferences 工具类
@@ -53,7 +57,18 @@ ext {
 
             gson             : 'com.google.code.gson:gson:2.8.0',   // json解析 gson
             fastjson         : 'com.alibaba:fastjson:1.2.32', // json解析 fastjson
+
             rxgalleryfinal   : 'cn.finalteam.rxgalleryfinal:library:1.0.7', // 图片选择器
-			galleryfinal	 : 'cn.finalteam:galleryfinal:1.4.8.7'// 图片选择器
-	]
+            galleryfinal     : 'cn.finalteam:galleryfinal:1.4.8.7', // 图片选择器
+
+            andpermission    : 'com.yanzhenjie:permission:1.0.8' // andpermission 运行时权限
+    ]
 }
+
+/*
+    主流图片加载框架
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.facebook.fresco:fresco:0.12.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+ */
